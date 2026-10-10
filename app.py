@@ -2,6 +2,7 @@
 import streamlit as st
 
 from src.screens.home_screen import home_screen
+from src.screens.landing_screen import landing_screen
 from src.screens.teacher_screen import teacher_screen
 from src.screens.student_screen import student_screen
 
@@ -23,7 +24,7 @@ def main():
             student_screen()
         
         case None:
-            home_screen()
+            landing_screen()
 
 
     join_code = st.query_params.get('join-code')

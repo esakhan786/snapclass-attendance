@@ -67,7 +67,7 @@ def student_dashboard():
 
         stats = stats_map.get(sid,{"total":0, "attended": 0} )
         def unenroll_button():
-                if st.button("Unenroll from this course", type='tertiary', width='stretch', icon=':material/delete_forever:'):
+                if st.button("Unenroll from this course", type='tertiary', use_container_width=True, icon=':material/delete_forever:', key=f"unenroll_{sid}"):
                     unenroll_student_to_subject(student_id, sid)
                     st.toast(f"Unenrolled from {sub['name']} successfully!")
                     st.rerun()
@@ -121,6 +121,7 @@ def student_screen():
 
             if num_faces == 0:
                 st.warning('Face not found!')
+                show_registration = True
             elif num_faces >1:
                 st.warning('Multiple faces found')
             else:
