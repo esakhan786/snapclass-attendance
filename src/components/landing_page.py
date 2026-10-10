@@ -1,15 +1,22 @@
+
+from pathlib import Path
+
 import streamlit as st
 from PIL import Image
 
-# ─── Mockup image paths ───────────────────────────────────────────────────────
+# Project root directory
+BASE_DIR = Path(__file__).resolve().parents[2]
+ASSETS_DIR = BASE_DIR / "assets"
+
+# Landing page mockup images stored inside the project
 IMGS = {
-    "teacher_login":    "C:/Users/DELL/.gemini/antigravity-ide/brain/81a8e50a-3239-45fc-a75a-80a0210e65e0/.user_uploaded/media_1791644632812.png",
-    "teacher_register": "C:/Users/DELL/.gemini/antigravity-ide/brain/81a8e50a-3239-45fc-a75a-80a0210e65e0/.user_uploaded/media_1791644658480.png",
-    "teacher_dashboard":"C:/Users/DELL/.gemini/antigravity-ide/brain/81a8e50a-3239-45fc-a75a-80a0210e65e0/.user_uploaded/media_1791644711196.png",
-    "teacher_subjects": "C:/Users/DELL/.gemini/antigravity-ide/brain/81a8e50a-3239-45fc-a75a-80a0210e65e0/.user_uploaded/media_1791644759321.png",
-    "student_faceid":   "C:/Users/DELL/.gemini/antigravity-ide/brain/81a8e50a-3239-45fc-a75a-80a0210e65e0/.user_uploaded/media_1791644871858.png",
-    "student_register": "C:/Users/DELL/.gemini/antigravity-ide/brain/81a8e50a-3239-45fc-a75a-80a0210e65e0/.user_uploaded/media_1791646392676.png",
-    "student_dashboard":"C:/Users/DELL/.gemini/antigravity-ide/brain/81a8e50a-3239-45fc-a75a-80a0210e65e0/.user_uploaded/media_1791645629406.png",
+    "teacher_login": ASSETS_DIR / "media_1791644632812.png",
+    "teacher_register": ASSETS_DIR / "media_1791644658480.png",
+    "teacher_dashboard": ASSETS_DIR / "media_1791644711196.png",
+    "teacher_subjects": ASSETS_DIR / "media_1791644759321.png",
+    "student_faceid": ASSETS_DIR / "media_1791644871858.png",
+    "student_register": ASSETS_DIR / "media_1791646392676.png",
+    "student_dashboard": ASSETS_DIR / "media_1791645629406.png",
 }
 
 
