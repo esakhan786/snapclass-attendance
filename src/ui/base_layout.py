@@ -8,11 +8,12 @@ def style_background_home():
         <style>
 
                 .stApp {
-                    background: #5865F2 !important;
+                    background: linear-gradient(135deg, #1E1B4B 0%, #3730A3 55%, #6366F1 100%) !important;
                 }
 
                 .stApp div[data-testid="stColumn"]{
-                    background-color:#E0E3FF !important;
+                    background-color:#FFFFFF !important;
+                    color:#172554 !important;
                     padding:2.5rem !important;
                     border-radius: 5rem !important;
                     }
@@ -28,7 +29,20 @@ def style_background_dashboard():
         <style>
 
                 .stApp {
-                    background: #E0E3FF !important;
+                    background: linear-gradient(135deg, #F8FAFC 0%, #E0E7FF 55%, #C7D2FE 100%) !important;
+                }
+
+                .stApp {
+                    color: #172554 !important;
+                }
+
+                .stApp p,
+                .stApp label,
+                .stApp h1,
+                .stApp h2,
+                .stApp h3,
+                .stApp h4 {
+                    color: #172554;
                 }
 
         </style>  
